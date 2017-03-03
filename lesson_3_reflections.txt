@@ -1,0 +1,41 @@
+1.When would you want to use a remote repository rather than keeping all your work
+local?
+
+    需要分享时、需要换电脑的时候远程库还是很棒的，而且和别人合作写程序时也需要使用
+远程库。
+
+2.Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+    因为可能一个功能在本地库进行了很多次的提交但是它却仅修改或增添了一个功能，
+而在远程库没有必要也进行那么多次的提交，所以手动更新远程仓库可以使远程仓库的
+日志更加清晰明了，而不必被别人看见。
+
+3.Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    分支是在本地repository里面创建一个分支，当我想尝试添加新功能或者做一个与
+上线版本不一样的版本时我可以使用分支。克隆可以从github上面克隆到本地，也可以
+从本地克隆到本地的另一个地方，当我需要对一个本地没有的库进行修改时我可以使用
+克隆。而fork则是将别人在GitHub上面的repository“克隆”到自己的GitHub上面，这
+样既能进行自己的修改，也能标明原作者，开源分享精神永流传。
+
+4.What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    有远程分支的上次已知状态副本（存储在本地）的好处是可以查看本地库和远程库
+的区别以及可以在看过他们的区别之后再选择合并或者则是其他操作。
+
+5.How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    当然是使用Git或者GitHub协同合作更容易啦，多人可以使用 GitHub 来分享对项目所
+做的更改和使用拉取请求来审查建议的更改，而不使用的话没办法一目了然。
+    
+6.When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    当我不想影响master分支的工作或者我想做一个新的功能而还未完全能够完善，我可能会
+开一个新的分支，当然在与别人合作时分支就更有用武之地，因为我不知道这个功能添加进去
+是否会使程序更好。而直接在master里进行修改的话，就免去了合并的麻烦，但是万一不喜欢
+新功能，还要进行恢复，而使用分支只要不接受pull request就可以了。

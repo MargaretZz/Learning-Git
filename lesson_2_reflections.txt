@@ -1,0 +1,38 @@
+﻿1.What happens when you initialize a repository? Why do you need to do it?
+
+    git init 能够初始化一个本地文件夹使它变成一个本地repository，这样文件夹里面
+会多出一个.git的文件夹进行版本记录。只有初始化之后才可以使用Git的功能。
+
+2.How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+    工作目录是本地的目录，它需要进行git add才能传到暂存区里面，而暂存区的文件需要
+通过git commit才能放进你的repository。工作目录是你第一个修改的，你确认OK了就可以放
+到staging area，但是你不一定需要提交此文件，所以称为暂存区，确认可以放进repository
+后，commit就可以了，放进了暂存区之后你也还是可以继续编辑你的文件。多重保护的感觉。
+
+3.How can you use the staging area to make sure you have one commit per logical
+change?
+    有一个逻辑修改就先commit，不要同时把两个逻辑修改放到暂存区就好。commit时的
+信息最好一句话就能解释，如果更新了太多内容，到时候很难进行恢复。
+
+4.What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+    分支可以让我们做一些还未能上线的新尝试，如果一个游戏我想出一个意大利语的，但是
+我一下子还没换过来我就可以用分支线保存已经修改的一部分。而这个分支不会影响master里
+的任何数据。master分支是这个游戏的质量保证，而其他分支是这个游戏的创新实践。互不影响。
+
+5.How do the diagrams help you visualize the branch structure?
+    图像使我更容易看出来分支从那里开始，它的父节点是哪里，哪里是它不能到达的、（即
+git log 无法查看到的commit）
+
+6.What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+    两个分支合并的结果是在此之前，两个分支的修改都合并到一起去，如一个游戏的分支我
+增加了游戏难度，另一个分支我改变了游戏配色，合并时我将会得到一个即改变饿游戏难度又
+改变了游戏配色的游戏。图仍然可以使我们查看git log的结果是怎样的。
+
+7.What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+    自动合并可以一步到位而不必担心有哪里没被修改到。而手动合并可能会有所缺漏，而且当
+工作量很大的时候手动合并并不好用。但是自动合并可能会将两个相同功能但是不同实现的函数
+合并到同一个文件，而手动合并可以在合并时再次审阅程序，人为地进行优化和修改。

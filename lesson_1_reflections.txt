@@ -1,0 +1,42 @@
+﻿1.How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    用diff去查看两个文件的不同是有对比性的，更容易看出来哪里进行过增删改，所以
+找bug也很快。
+
+2.How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    能够查看文件的历史则意味着我们不必担心某次修改会不会导致整个程序崩溃，因为
+可以恢复到前一状态。而且如果某一修改产生了Bug,则对比前一次的文件也能使我们能快
+速有效地查看是哪里出了问题。（我以前没有用Git的时候，打算法题都是改一点交一次，
+最后可能根本不知道自己改了哪里、为什么这样改就对了，所以通过查看历史版本，可以
+比较前后代码，能够更好地解决问题和反思问题）
+
+3.What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    自动保存虽然拯救了很多容易忘事的人，但是如果我正在编辑，自动保存可能并不是
+一件好事，当我打开上一版本时，我可能会忘记我当时在做什么。而手动保存则提供了一种
+逻辑性，但是要养成好习惯多提交才好，不然改了很久然后电脑坏了没提交就功亏一篑。
+
+4.Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    多个文件一并提交则不必担心文件与文件之间有版本差异，而仅能单独提交则可能会有
+文件1和文件2版本不一致的情况，不好统一。
+
+5.How can you use the commands git log and git diff to view the history of files?
+
+    当我的新commit有bug我可以看git log然后用git diff去对比两个文件，看看是哪里出了错。
+
+6.How might using version control make you more confident to make changes that
+could break something?
+
+    我可以尝试更多的新编程方式，因为总可以恢复所以我不用担心进行修改后就崩溃。
+而且branch可以使我为一个游戏开发不同的玩法。（程序亦然）
+
+7.Now that you have your workspace set up, what do you want to try using Git for?
+
+    进行版本控制?
